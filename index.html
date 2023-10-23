@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="style.css">   
+    <link rel="icon" type="image/png" href="assets/shopping-cart.png"/> 
+</head>
+<body>
+    <header class ="cabecalho">
+        <img src="assets/shopping-cart.png" alt="Logo-carrinho">
+        <h1 class="cabecalho__titulo">FAKE STORE</h1>
+    </header>
+    <main class="main">
+        <div class="pesquisa">
+            <div class="pesquisa__filtros">
+                <p class="pesquisa__filtros__texto">Filters
+                    <img src="assets/filtro.png" alt="simbolo-filtro">
+                </p>
+                <p class="pesquisa__filtros__texto">Price
+                    <select class="pesquisa__filtros_select" id="ordenar-preco">
+                        <option value="original">---</option>
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                </p>
+                <fieldset class="pesquisa__filtros__fieldset" id="filtro-categorias">
+                    <legend>Categories</legend>
+                </fieldset>
+            </div>
+            <div class="pesquisa__barra">
+                <p class="pesquisa__barra__texto">
+                    <img class="pesquisa__barra__imagem" src="assets/lupa.png" alt="simbolo-pesquisa">
+                    Search
+                </p>
+            </div>
+        </div>
+        <section class="produtos">
+            <h2 class="produtos__titulo">PRODUCTS</h2>
+            <div class="produtos__container" id="product-container">
+            </div>
+            <script src="script.js"></script>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Davi Reina</p>
+    </footer>
+</body>
+</html>
+
